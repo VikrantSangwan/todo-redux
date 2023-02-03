@@ -1,0 +1,6 @@
+1. Configure store
+2. Add provide with store
+3. Add reducer
+4. Configure actions
+5. Dispatch actions
+6. Read data using selectors
