@@ -7,7 +7,7 @@ function TodoForm() {
   const dispatch = useDispatch();
 
   return (
-    <form>
+    <div>
       <input
         type="text"
         className="form-control"
@@ -24,7 +24,7 @@ function TodoForm() {
       >
         Add
       </button>
-    </form>
+    </div>
   );
 }
 
