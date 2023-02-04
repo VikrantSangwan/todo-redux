@@ -16,6 +16,10 @@ export const todoSlice = createSlice({
       console.log(action.payload);
       state.value.push(action.payload);
     },
+    update: (state, action) => {
+      console.log(action.payload);
+      state.value[action.payload.index] = action.payload.text;
+    },
   },
 });
 
@@ -23,7 +27,7 @@ export const todoSlice = createSlice({
 export const todoSelector = (state) => state.todo.value;
 
 // Exporting the actions so that anyone can use it using dispatcher.
-export const { add } = todoSlice.actions;
+export const { add, update } = todoSlice.actions;
 
 //for store
 export default todoSlice.reducer;
